@@ -90,6 +90,20 @@ h2 {
 	text-align: right;
 }
 
+.stih{
+	display: inline-block;
+	background-color: NavajoWhite;
+	border: 2px;
+	border-radius: 10px;
+	margin: 1px;
+	padding: 2%;
+	width: 50%;
+	height: 90%;
+	min-height: 825px;
+	max-width: 1000px;
+	text-align: center;
+	vertical-align: bottom;
+	}
 
 .center{
 
@@ -103,7 +117,7 @@ h2 {
 	height: 90%;
 	min-height: 825px;
 	max-width: 1000px;
-	text-align: center;
+	text-align: left;
 	vertical-align: bottom;
 	}
 
