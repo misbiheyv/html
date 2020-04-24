@@ -3,107 +3,132 @@
 <head>
     <title>News</title>
     <meta charset="UTF-8">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
-    <link rel='stylesheet' href="mystyle.css">
-    <link rel="stylesheet" href="bootstrap-3.4.1-dist/font-glyphicons.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css' rel='stylesheet'>
+    <link href="mystyle.css" rel='stylesheet'>
+    <link href="bootstrap-3.4.1-dist/font-glyphicons.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="myscripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
 </head>
+
 <body translate="no">
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
     <a class="navbar-brand" href="#">Коронавирусная инфекция</a> <span class="badge badge-danger"> COVID-19</span>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+
+    <button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+            data-target="#navbarCollapse" data-toggle="collapse" type="button">
         <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto sidenav" id="navAccordion">
+
             <li class="nav-item active">
                 <a class="nav-link">Меню <span class="sr-only"> (current) </span></a>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="new.html">О болезни</a>
             </li>
+
             <li class="nav-item">
-                <a class="nav-link nav-link-collapse" href="new2.html" id="hasSubItems" data-toggle="collapse"
-                   data-target="#collapseSubItems2" aria-controls="collapseSubItems2" aria-expanded="false">Меры
+                <a aria-controls="collapseSubItems2" aria-expanded="false" class="nav-link nav-link-collapse"
+                   data-target="#collapseSubItems2"
+                   data-toggle="collapse" href="new2.html" id="hasSubItems">Меры
                     профилактики</a>
-                <ul class="nav-second-level collapse" id="collapseSubItems2" data-parent="#navAccordion">
+
+                <ul class="nav-second-level collapse" data-parent="#navAccordion" id="collapseSubItems2">
+
                     <li class="nav-item">
                         <a class="nav-link" href="new2.html#firstcool">
                             <span class="nav-link-text">Основные меры предосторожности для защиты от новой
                             коронавирусной инфекции </span>
                         </a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="new2.html#secondcool">
                             <span class="nav-link-text">Меры индивидуальной защиты для тех, кто недавно (в последние
                             14 дней) посещал районы распространения COVID-19</span>
                         </a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="new2.html#thirdcool">
                             <span class="nav-link-text">Листовки от Роспотребнадзора </span>
                         </a>
                     </li>
+
                 </ul>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="new3.html">Статистика заболевания</a>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="new4.html">Последние новости <span
                         class="badge badge-success">TWITTER EDITON</span> </a>
             </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="math-viever.html">??? <span
+                        class="badge badge-danger">91-divoc otni ton taht ffuts emos</span> </a>
+            </li>
         </ul>
-        <form class="form-inline ml-auto mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
     </div>
 </nav>
 <main class="content-wrapper">
     <nav aria-label="breadcrumb">
+
         <ol class="breadcrumb">
+
             <li class="breadcrumb-item"><a href="new.html">О болезни</a></li>
+
             <li class="breadcrumb-item"><a href="new2.html">Меры предосторожности</a></li>
+
             <li class="breadcrumb-item"><a href="new2.html">Статистика заболевания</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Последние новости</li>
+
+            <li aria-current="page" class="breadcrumb-item active">Последние новости</li>
+
         </ol>
     </nav>
     <div class="container-fluid">
         <div class="row">
+
             <div class="col-md-4">
                 <a class="twitter-timeline" href="https://twitter.com/AlrtCoronaVirus?ref_src=twsrc%5Etfw">Tweets by
                     AlrtCoronaVirus</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <script async charset="utf-8" src="https://platform.twitter.com/widgets.js"></script>
             </div>
+
             <div class="col-md-4">
                 <a class="twitter-timeline" href="https://twitter.com/tjournal?ref_src=twsrc%5Etfw">Tweets by
                     tjournal</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <script async charset="utf-8" src="https://platform.twitter.com/widgets.js"></script>
             </div>
+
             <div class="col-md-4">
                 <a class="twitter-timeline" href="https://twitter.com/WHO?ref_src=twsrc%5Etfw">Tweets by WHO</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <script async charset="utf-8" src="https://platform.twitter.com/widgets.js"></script>
             </div>
+
         </div>
     </div>
 </main>
+
 <footer class="footer">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6" align="center">
+            <div align="center" class="col-md-6">
                 <ol>
                     <p class="lead">
                         <strong> Тест на коронавирус можно было сдать здесь: </strong>
                     </p>
-                    <li class="list-item" >
+                    <li class="list-item">
                         Владивостокская поликлиника №1, 6
                     </li>
                     <li class="list-item">
@@ -114,17 +139,22 @@
                     </li>
                 </ol>
             </div>
-            <div class="col-md-6" align="center">
+            <div align="center" class="col-md-6">
                 <p class="lead">
-                    <strong> Номера скорой медицинской помощи - 103, 112 </strong> <span class="glyphicon glyphicon-earphone"></span>
+                    <strong> Номера скорой медицинской помощи - 103, 112 </strong> <span
+                        class="glyphicon glyphicon-earphone"></span>
                 </p>
 
                 <div class="media">
-                    <img class="mr-3" src="pics/2fba11754483613f.jpg"alt="Generic placeholder image" width="100" height="50">
+                    <img alt="Generic placeholder image" class="mr-3" height="50" src="pics/2fba11754483613f.jpg"
+                         width="100">
                     <div class="media-body">
-                        <h5 class="mt-0">Обращайтесь в СМП при первых симптомах ОРВИ и недомогании с повышением температуры</h5>
-                        Если у вас легкие симптомы и нет ‎сопутствующих заболеваний, ‎самоизолируйтесь дома и свяжитесь с врачом ‎или позвоните по горячей линии COVID-19. ‎
-                        В случае повышения температуры, появления ‎кашля и одышки обратитесь за медицинской ‎помощью. Вызовите врача по телефону. ‎
+                        <h5 class="mt-0">Обращайтесь в СМП при первых симптомах ОРВИ и недомогании с повышением
+                            температуры</h5>
+                        Если у вас легкие симптомы и нет ‎сопутствующих заболеваний, ‎самоизолируйтесь дома и свяжитесь
+                        с врачом ‎или позвоните по горячей линии COVID-19. ‎
+                        В случае повышения температуры, появления ‎кашля и одышки обратитесь за медицинской ‎помощью.
+                        Вызовите врача по телефону. ‎
                     </div>
                 </div>
             </div>
