@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Main page</title>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+    <link rel='stylesheet' href="mystyle.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="myscripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+</head>
+<body translate="no">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Коронавирусная инфекция</a> <span class="badge badge-danger"> COVID-19</span>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto sidenav" id="navAccordion">
+            <li class="nav-item active">
+                <a class="nav-link" >Меню <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="new.html">О болезни</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-collapse" href="new2.html" id="hasSubItems" data-toggle="collapse"
+                   data-target="#collapseSubItems2" aria-controls="collapseSubItems2" aria-expanded="false">Меры
+                    профилактики</a>
+                <ul class="nav-second-level collapse" id="collapseSubItems2" data-parent="#navAccordion">
+                    <li class="nav-item">
+                        <a class="nav-link" href="new2.html#firstcool">
+                            <span class="nav-link-text">Основные меры предосторожности для защиты от новой
+                            коронавирусной инфекции </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="new2.html#secondcool">
+                            <span class="nav-link-text">Меры индивидуальной защиты для тех, кто недавно (в последние
+                            14 дней) посещал районы распространения COVID-19</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="new2.html#thirdcool">
+                            <span class="nav-link-text">Листовки от Роспотребнадзора </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="new3.html">Статистика заболевания</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="new4.html">Последние новости <span
+                        class="badge badge-success">TWITTER EDITON</span> </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main class="content-wrapper">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">О болезни</li>
+        </ol>
+    </nav>
+    <div class="container-fluid">
+        <h2>
+            Основные сведения о болезни
+        </h2>
+
+        <p class="lead">
+            <strong> Коронавирусы </strong> составляют обширное семейство вирусов с доказанными болезнетворными
+            свойствами по отношению
+            к человеку или животным. Известно, что ряд коронавирусов способен вызывать у человека респираторные
+            инфекции в диапазоне от обычной простуды до более серьезных состояний, таких как ближневосточный
+            респираторный синдром (БВРС) и тяжелый острый респираторный синдром (ТОРС). <strong> Последний из
+            недавно
+            открытых коронавирусов вызывает заболевание COVID‑19. </strong>
+        </p>
+
+        <p class="lead">
+            Коронавирусы – зоонозы, то есть патогены, передающиеся от животных человеку. По итогам тщательного
+            исследования было установлено, что источником заражения людей ТОРС-КоВ были циветы, а БВРС-КоВ –
+            одногорбые верблюды. Известно еще несколько коронавирусов, циркулирующих среди животных, но случаев
+            заражения ими человека пока не зафиксировано.
+        </p>
+        <h2>
+            Что такое COVID-19<a href="#" class="text-info" data-toggle="tooltip" title=""
+                                 data-original-title="Аббревиатура от англ. COronaVIrus Disease 2019">? </a>
+        </h2>
+        <p class="lead">
+            COVID‑19 – инфекционное заболевание, вызванное последним из недавно открытых коронавирусов. До вспышки
+            инфекции в Ухане, Китай, в декабре 2019 г. о новом вирусе и заболевании ничего не было известно.
+        </p>
+
+        <h2>
+            Каковы основные симптомы COVID-19?
+        </h2>
+
+        <p class="lead">
+            К наиболее распространенным симптомам COVID‑19 относятся <strong> повышение температуры тела,
+            утомляемость и сухой
+            кашель.</strong> У ряда пациентов могут отмечаться <strong> различные боли, заложенность носа, насморк,
+            фарингит или диарея.</strong>
+            Как правило, эти симптомы развиваются постепенно и носят слабо выраженный характер. У некоторых
+            инфицированных лиц не возникает каких-либо симптомов или плохого самочувствия. У большинства людей
+            (порядка
+            80%) болезнь заканчивается выздоровлением, при этом специфических лечебных мероприятий не требуется.
+            Примерно в одном из шести случаев COVID-19 возникает тяжелая симптоматика с развитием дыхательной
+            недостаточности. У пожилых людей, а также лиц с имеющимися соматическими заболеваниями, например,
+            артериальной гипертензией, заболеваниями сердца или диабетом, вероятность тяжелого течения заболевания
+            выше.
+            <strong> При наличии повышенной температуры тела, кашля и затрудненного дыхания следует обращаться за
+                медицинской
+                помощью. </strong>
+        </p>
+
+        <h2>
+            Как распространяется вирус?
+        </h2>
+        <p class="lead">
+            Заразиться 2019‑nCoV можно от других людей, если они инфицированы вирусом. <strong> Заболевание может
+            передаваться от
+            человека к человеку через мелкие капли, выделяемые из носа или рта больного COVID‑19 при кашле или
+            чихании.</strong>
+            Эти капли попадают на окружающие человека предметы и поверхности. Другие люди могут заразиться в
+            результате
+            прикосновения сначала к таким предметам или поверхностям, а затем – к глазам, носу или рту. Кроме того,
+            заражение может произойти при вдыхании мелких капель, которые выделяются при кашле или чихании человека
+            с
+            COVID‑19. По этой причине важно держаться от больного человека на расстоянии более 1 метра.
+        </p>
+
+        <h2>
+            Форма протекания заболевания
+        </h2>
+        <p class="lead">
+            Примерно в 15 % случаев заболевание протекает в тяжёлой форме с необходимостью применения кислородной
+            терапии, ещё в 5 % состояние больных критическое. В целом по миру на 16 апреля летальность
+            заболевания оценивается примерно в 6,5 %. Согласно анализу данных по 1099 пациентам по состоянию на
+            28 февраля 2020 года у 91,1 % пациентов с COVID-19 диагностировалась пневмония. Показатели с
+            течением времени могут измениться.
+        </p>
+        <p class="lead">
+            <strong> Прогрессирование болезни по медианному количеству дней с момента появления симптомов. </strong>
+        </p>
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">День</th>
+                <th scope="col">Состояние</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>7 (4—8)</td>
+                <td>Госпитализация</td>
+            </tr>
+            <tr>
+                <td>8 (5—13)</td>
+                <td>Одышка</td>
+            </tr>
+            <tr>
+                <td>9 (8—14)</td>
+                <td>Острый респираторный
+                    дистресс-синдром
+                </td>
+            </tr>
+            <tr>
+                <td>10,5 (7—14)</td>
+                <td>Механическая вентиляция
+                    лёгких
+                </td>
+            </tr>
+            <tr>
+                <td>10,5</td>
+                <td>Перевод
+                    в отделение реанимации
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h2>
+            Осложнения
+        </h2>
+        <p class="lead">
+            COVID-19 ассоциируется с сильными воспалительными процессами, в том числе с цитокиновым штормом. Повышенные
+            уровни провоспалительных цитокинов могут свидетельствовать о развитии вторичного гемофагоцитарного
+            лимфогистиоцитоза.
+
+            Воспалительные процессы могут затронуть сердечно-сосудистую систему, приводя к аритмиям и миокардиту. Острая
+            сердечная недостаточность встречается в основном среди тяжело или критически больных пациентов. Инфекция
+            может оказывать долгосрочное воздействие на состояние здоровья сердечно-сосудистой системы. В случае
+            пациентов с сердечно-сосудистыми заболеваниями в истории болезней может потребоваться строгий контроль их
+            состояния.
+        <p class="lead">
+            <strong> Возможные осложнения COVID-19: </strong>
+        </p>
+        </p>
+        <table class="table table-striped table-dark">
+            <thead>
+            <tr>
+                <th scope="col">Осложнения</th>
+                <th scope="col">Процент вероятности</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>острый респираторный дистресс-синдром</td>
+                <td>от 15 % до 33 %</td>
+            </tr>
+            <tr>
+                <td>острая дыхательная недостаточность</td>
+                <td>8 %</td>
+            </tr>
+            <tr>
+                <td>острая сердечная недостаточность</td>
+                <td>от 7 % до 20 %</td>
+            </tr>
+            </tbody>
+            <tr>
+                <td>вторичная инфекция</td>
+                <td>от 6 % до 10 %</td>
+            </tr>
+            <tr>
+                <td>острая почечная недостаточность</td>
+                <td>от 14 % до 53 %</td>
+            </tr>
+            <tr>
+                <td>септический шок</td>
+                <td>от 4 % до 8 %</td>
+            </tr>
+            <tr>
+                <td>кардиомиопатии</td>
+                <td>у 33 % критических</td>
+            </tr>
+            <tr>
+                <td>диссеминированное внутрисосудистое свёртывание</td>
+                <td>у 71 % погибших</td>
+            </tr>
+            <tr>
+                <td>осложнения беременностич</td>
+                <td>не исключаются</td>
+            </tr>
+        </table>
+
+    </div>
+
+</main>
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6" align="center">
+                <ol>
+                    <p class="lead">
+                        <strong> Тест на коронавирус можно было сдать здесь: </strong>
+                    </p>
+                    <li class="list-item" >
+                        Владивостокская поликлиника №1, 6
+                    </li>
+                    <li class="list-item">
+                        Владивостокская детская поликлиника №2, 3, 5
+                    </li>
+                    <li class="list-item">
+                        Краевая детская клиническая больница №2
+                    </li>
+                </ol>
+            </div>
+            <div class="col-md-6" align="center">
+                <p class="lead">
+                    <strong> Номера скорой медицинской помощи - 103, 112 </strong> <span class="glyphicon glyphicon-earphone"></span>
+                </p>
+
+                <div class="media">
+                    <img class="mr-3" src="pics/2fba11754483613f.jpg"alt="Generic placeholder image" width="100" height="50">
+                    <div class="media-body">
+                        <h5 class="mt-0">Обращайтесь в СМП при первых симптомах ОРВИ и недомогании с повышением температуры</h5>
+                        Если у вас легкие симптомы и нет ‎сопутствующих заболеваний, ‎самоизолируйтесь дома и свяжитесь с врачом ‎или позвоните по горячей линии COVID-19. ‎
+                        В случае повышения температуры, появления ‎кашля и одышки обратитесь за медицинской ‎помощью. Вызовите врача по телефону.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

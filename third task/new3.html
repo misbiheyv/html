@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Stats</title>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+    <link rel='stylesheet' href="mystyle.css">
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/font-glyphicons.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="myscripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+</head>
+<body translate="no">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand">Коронавирусная инфекция</a> <span class="badge badge-danger"> COVID-19</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto sidenav" id="navAccordion">
+            <li class="nav-item active">
+                <a class="nav-link">Меню <span class="sr-only"> (current) </span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="new.html">О болезни</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-collapse" href="new2.html" id="hasSubItems" data-toggle="collapse"
+                   data-target="#collapseSubItems2" aria-controls="collapseSubItems2" aria-expanded="false">Меры
+                    профилактики</a>
+                <ul class="nav-second-level collapse" id="collapseSubItems2" data-parent="#navAccordion">
+                    <li class="nav-item">
+                        <a class="nav-link" href="new2.html#firstcool">
+                            <span class="nav-link-text">Основные меры предосторожности для защиты от новой
+                            коронавирусной инфекции </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="new2.html#secondcool">
+                            <span class="nav-link-text">Меры индивидуальной защиты для тех, кто недавно (в последние
+                                14 дней) посещал районы распространения COVID-19</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="new2.html#thirdcool">
+                            <span class="nav-link-text">Листовки от Роспотребнадзора </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="new3.html">Статистика заболевания</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="new4.html">Последние новости <span
+                        class="badge badge-success">TWITTER EDITON</span> </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main class="content-wrapper">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="new.html">О болезни</a></li>
+            <li class="breadcrumb-item"><a href="new2.html">Меры предосторожности</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Статистика заболевания</li>
+        </ol>
+    </nav>
+    <div class="container-fluid" align="center">
+        <p>
+            <a class="btn btn-dark" data-toggle="collapse" href="#multiCollapseExample1" role="button"
+               aria-expanded="false" aria-controls="multiCollapseExample1">Открыть карту мира <span
+                    class="badge badge-info">Updated </span> </a>
+            <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#multiCollapseExample2"
+                    aria-expanded="false" aria-controls="multiCollapseExample2">Открыть карту России <span
+                    class="badge badge-info">Updated</span>
+            </button>
+            <button class="btn btn-dark" type="button" data-toggle="collapse" data-target=".multi-collapse"
+                    aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Открыть обе карты
+            </button>
+        </p>
+        <div class="row">
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                        <h2 class="lead">
+                            <strong> Карта мира </strong>
+                        </h2>
+                        <p>
+                            <iframe src="https://coronavirus-monitor.ru/map" frameBorder="2" height="400" width="900"
+                                    style="max-width: 100%;"></iframe>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body">
+                        <h2 class="lead">
+                            <strong> Карта России </strong>
+                        </h2>
+                        <p>
+                            <iframe src="https://coronavirus-monitor.ru/map-russia" frameBorder="2" height="400"
+                                    width="900" style="max-width: 100%;"></iframe>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6" align="center">
+                <ol>
+                    <p class="lead">
+                        <strong> Тест на коронавирус можно было сдать здесь: </strong>
+                    </p>
+                    <li class="list-item" >
+                        Владивостокская поликлиника №1, 6
+                    </li>
+                    <li class="list-item">
+                        Владивостокская детская поликлиника №2, 3, 5
+                    </li>
+                    <li class="list-item">
+                        Краевая детская клиническая больница №2
+                    </li>
+                </ol>
+            </div>
+            <div class="col-md-6" align="center">
+                <p class="lead">
+                    <strong> Номера скорой медицинской помощи - 103, 112 </strong> <span class="glyphicon glyphicon-earphone"></span>
+                </p>
+
+                <div class="media">
+                    <img class="mr-3" src="pics/2fba11754483613f.jpg"alt="Generic placeholder image" width="100" height="50">
+                    <div class="media-body">
+                        <h5 class="mt-0">Обращайтесь в СМП при первых симптомах ОРВИ и недомогании с повышением температуры</h5>
+                        Если у вас легкие симптомы и нет ‎сопутствующих заболеваний, ‎самоизолируйтесь дома и свяжитесь с врачом ‎или позвоните по горячей линии COVID-19. ‎
+                        В случае повышения температуры, появления ‎кашля и одышки обратитесь за медицинской ‎помощью. Вызовите врача по телефону. ‎
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

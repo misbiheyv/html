@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+    <link rel='stylesheet' href="mystyle.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="myscripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3" align="center">
+            <a tabindex="0" class="btn btn-lg btn-dark" role="button" data-toggle="popover" data-trigger="focus"
+               title="Использование в MatJax"
+               data-content="Существует два способа создать дробь. \frac ab, eсли числитель и знаменатель слишком сложны, можно использовать \over">
+                $$ a \over b $$</a>
+        </div>
+        <div class="col-md-3" align="center" >
+            <a tabindex="0" class="btn btn-lg btn-dark" role="button" data-toggle="popover" data-trigger="focus"
+               title="Использование в MatJax"
+               data-content="\sum и \int; нижний индекс соответствует нижнему  пределу, а верхний индекс - верхнему пределу.">
+                $$ \sum_{b=0}^a = \frac{(5a)}{b} $$ $$ \int_{b}^a = {a+b} $$</a>
+        </div>
+        <div class="col-md-3" align="center">
+            <a tabindex="0" class="btn btn-lg btn-dark" role="button" data-toggle="popover" data-trigger="focus"
+               title="Использование в MatJax"
+               data-content="Используйте \sqrt, который подстраивается к размеру аргумента. Предел задается через \lim? можно использовать нижние индексы, чтобы прикрепить дополнительные надписи к нему">
+                $$ \lim_{x\to 0} = \sqrt[3]{\frac xy} $$</a>
+        </div>
+        <div class="col-md-3" align="center">
+            <svg width="700" height="500">
+                <polygon points="5, 305 137.5,5 275,305"
+                         fill="white" stroke="black" stroke-width="3"/>
+                <ellipse rx="63" ry="30" cx="140" cy="200"
+                         fill="white" stroke="black" stroke-width="3" />
+                <ellipse rx="5" ry="20" cx="140" cy="200"
+                         fill="BLACK" stroke="black" stroke-width="3" />
+                <line x1="96" y1="150" x2="100" y2="176" stroke="BLACK" stroke-width="5" />
+                <line x1="140" y1="140" x2="140" y2="169" stroke="BLACK" stroke-width="5" />
+                <line x1="182" y1="150" x2="170" y2="173" stroke="BLACK" stroke-width="5" />
+            </svg>
+            <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
+                Тык
+            </button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">?eltit lаdoM</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="pics/ZEOe99CZRAw.jpg" height="300" width="300">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">?tixe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
