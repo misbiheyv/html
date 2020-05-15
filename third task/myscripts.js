@@ -16,6 +16,11 @@ function areaEllipse(obj) {
     }
 };
 
+function output_1(obj) {
+    obj.fir.value = myMatrix;
+
+}
+
 function div(obj){
     var fir = obj.a.value;
     var sec = obj.b.value;
