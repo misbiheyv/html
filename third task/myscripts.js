@@ -16,11 +16,6 @@ function areaEllipse(obj) {
     }
 };
 
-function output_1(obj) {
-    obj.fir.value = myMatrix;
-
-}
-
 function div(obj){
     var fir = obj.a.value;
     var sec = obj.b.value;
@@ -67,6 +62,16 @@ function matrixArray(rows,columns){ //Функция, которая созда�
 
 function compareNumbers(a, b) {
     return a - b;
+}
+var myMatrix = matrixArray(7,9);
+
+
+myMatrix.forEach(row => row.sort(compareNumbers));
+console.log(myMatrix);
+
+function output_1(obj) {
+    obj.fir.value = myMatrix;
+
 }
 
 function getRandomInt(min, max) {
