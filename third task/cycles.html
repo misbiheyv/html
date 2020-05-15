@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+    <link rel='stylesheet' href="mystyle.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="myscripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+</head>
+<body translate="no">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Task #4 for WEB</a> <span class="badge badge-danger"> w/ JS</span>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto sidenav" id="navAccordion">
+            <li class="nav-item active">
+                <a class="nav-link">Меню <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ellipseare.html">Эллипс. Площадь эллипса.</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cycles.html">
+                    <span class="nav-link-text">Массивы и циклы </span>
+                </a>
+            </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="new4.html">Функции </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main class="content-wrapper">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="new2.html">Эллипс. Площадь эллипса.</a></li>
+
+            <li aria-current="page" class="breadcrumb-item active">Массивы и циклы</li>
+        </ol>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="lead">
+             <p> Здесь мы будем вычислять формулу </p>
+            <h2> $$ e^x = 1 + x +  x^2/2! + x^3/3! + ... + x^n/n! $$ </h2>
+            </div>
+        <div class="lead">
+            <p> Возьмем х = 1, n = 6 и получим значение $$e^1$$</p>
+            <div class="lead">
+            <form name="f1" class="lead">
+
+                <strong> Получаем </strong> <textarea readonly name="res"></textarea> <br><br>
+
+                <button class="btn btn-dark" type="reset">Очистить</button>
+
+                <input type="button" name="button" class="btn btn-dark" value="Вычислить" onClick="meow(f1);">
+            </form>
+            </div>
+        </div>
+        <div class="lead">
+            <p>Заполним матрицу 7х9 случайными числами и расположим в порядке возрастания</p>
+
+            <form name="fE1" class="lead">
+            <strong> Получаем </strong> <textarea readonly name="fir"></textarea> <br><br>
+            <input type="button" name="button" class="btn btn-dark" size="50" value="Вычислить" onClick="output_1(fE1);"><br><br>
+            </form>
+        </div>
+    </div>
+
+
+</main>
+</body>
+</html>
