@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+    <link rel='stylesheet' href="mystyle.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="myscripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+</head>
+<body translate="no">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Task #4 for WEB</a> <span class="badge badge-danger"> w/ JS</span>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto sidenav" id="navAccordion">
+            <li class="nav-item active">
+                <a class="nav-link">Меню <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ellipseare.html">Эллипс. Площадь эллипса.</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cycles.html">
+                    <span class="nav-link-text">Массивы и циклы </span>
+                </a>
+            </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="functions.html">Функции </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main class="content-wrapper">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="new2.html">Эллипс. Площадь эллипса.</a></li>
+            <li class="breadcrumb-item"><a href="new2.html">Массивы и циклы</a></li>
+            <li aria-current="page" class="breadcrumb-item active">Функции</li>
+        </ol>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="container my-5">
+            <div class="container">
+                <h5>Генерация рандомного числа и массива</h5>
+                    <form name="f1" class="lead">
+                        <div class="col-md-3 mb-3">
+                            <input id="min" type="number" step="1" class="form-control" placeholder="Введите min" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <input id="max" type="number" step="1" class="form-control" placeholder="Введите max" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <input id="n" type="number" step="1" class="form-control" placeholder="Введите n" min="0" required>
+                        </div>
+                    <br><br>
+                        <button class="btn btn-success" onclick="genSnakeArray(f1)" type="submit">Вывести массив</button>
+
+                    <button class="btn btn-light" type="reset">Очистить</button>
+                </form>
+            </div>
+            <div id="cout">
+
+            </div>
+    </div>
+
+    </div>
+</main>
+</body>
+</html>
