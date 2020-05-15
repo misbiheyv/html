@@ -64,77 +64,70 @@ function compareNumbers(a, b) {
     return a - b;
 }
 
-function getArray(n, max, min) {
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
+
+function getArray(n) {
+    let min = +document.getElementById("min").value;
+    let max = +document.getElementById("max").value;
 
     if (min >= max) {
-        alert("Неправильный ввод! Максимум должен быть больше минимума");
-        return;
+      alert("Неправильный ввод! Максимум должен быть больше минимума");
+      return;
     }
 
-    let arr = [];
+    let array = [];
     for (let i = 0; i < n; i++) {
-        arr[i] = getRandomInt(min, max);
+      array[i] = getRandomInt(min, max);
     }
-    return arr;
+    return array;
 }
 
 function getResultArray(array) {
-    let sort_array = array.sort((a, b) => b - a);
+    let sort_array = array.sort((a, b) => a - b);
     return sort_array;
 }
 
-function genSnakeArray(obj) {
-    let n = obj.n.value;
-    let max = obj.max.value;
-    let min = obj.min.value;
+function genSnakeArray() {
+    let n = +document.getElementById("n").value;
 
-    let array = getArray(n, max, min);
+    let array = getArray(n * n);
     let data = getResultArray(array);
     let A = [];
     for (let i = 0; i < n; i++) {
-        A[i] = [];
+      A[i] = [];
     }
     let index = 0;
     for (let i = 0; i < n; i++) {
 
-        if (i % 2 == 0) {
-            for (let j = 0; j < n; j++) {
-                A[j][i] = data[index++];
-            }
-        } else {
-            for (let j = n - 1; j >= 0; j--) {
-                A[j][i] = data[index++];
-            }
+      if (i % 2 == 0) {
+        for (let j = n - 1; j >= 0; j--){
+          A[j][i] = data[index++];
         }
+      } else {
+        for (let j = 0; j < n; j++)  {
+          A[j][i] = data[index++];
+        }
+      }
     }
 
     let html = "<table class=\"table text-center table-bordered table-hover\">";
     for (let i = 0; i < n; i++) {
-        html += "<tr>";
-        for (let j = 0; j < n; j++) {
-            html += "<td>" + A[i][j] + "</td>";
-        }
-        html += "</tr>";
+      html += "<tr>";
+      for (let j = 0; j < n; j++) {
+        html += "<td>" + A[i][j] + "</td>";
+      }
+      html += "</tr>";
     }
     html += "</table>";
 
     document.getElementById("cout").innerHTML = html;
-};
+  }
+  function clearCout() {
+    document.getElementById("cout").innerHTML = "";
+  }
 
-var myMatrix = matrixArray(7,9);
-
-
-myMatrix.forEach(row => row.sort(compareNumbers));
-console.log(myMatrix);
-
-function output_1(obj) {
-    obj.fir.value = myMatrix;
-
-}
-
-
-window.console = window.console || function (t) {
-};
 
 
 if (document.location.search.match(/type=embed/gi)) {

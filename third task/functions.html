@@ -56,28 +56,30 @@
     </nav>
 
     <div class="container-fluid">
-        <div class="container my-5">
-            <div class="container">
-                <h5>Генерация рандомного числа и массива</h5>
-                    <form name="f1" class="lead">
-                        <div class="col-md-3 mb-3">
-                            <input id="min" type="number" step="1" class="form-control" placeholder="Введите min" required>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <input id="max" type="number" step="1" class="form-control" placeholder="Введите max" required>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <input id="n" type="number" step="1" class="form-control" placeholder="Введите n" min="0" required>
-                        </div>
-                    <br><br>
-                        <button class="btn btn-success" onclick="genSnakeArray(f1)" type="submit">Вывести массив</button>
-
-                    <button class="btn btn-light" type="reset">Очистить</button>
-                </form>
-            </div>
+        <div class="container">
+            <h5>Генерация рандомного числа и массива</h5>
+            <form class="form p-3" onsubmit="genSnakeArray();" action="javascript:void(0);">
+              <div class="form" onsubmit="genSnakeArray();" action="javascript:void(0);">
+                <div class="col-md-3 mb-3">
+                  <input id="min" type="number" step="1" class="form-control" placeholder="Введите min" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <input id="max" type="number" step="1" class="form-control" placeholder="Введите max" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <input id="n" type="number" step="1" class="form-control" placeholder="Введите n" min="0" required>
+                </div>
+              </div>
+              <br>
+              <button class="btn btn-success" type="submit">Вывести массив</button>
+    
+              <button class="btn btn-light" type="reset" onclick=" clearCout();">Очистить</button>
+              <hr>
+            </form>
             <div id="cout">
-
+    
             </div>
+          </div>
     </div>
 
     </div>
