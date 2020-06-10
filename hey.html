@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="scrips.js"></script>
+</head>
+<body onload="init();">
+<canvas id="canvas" width="800" height="480" onclick="goInput(event.clientX, event.clientY);">
+</canvas>
+<form>
+    <input type="button" value="Up!" onclick="moveUp()">
+    <input type="button" value="Down!" onclick="moveDown()">
+    <input type="button" value="Left!" onclick="moveLeft()">
+    <input type="button" value="Right!" onclick="moveRight()">
+    <input type="button" value="Random!" onclick="randomDirection()">
+    <input type="button" value="CHAOS!!!" onclick="chaos()">
+    <input type="button" value="Stop!" onclick="stopMove()">
+    <input type= "button" value="Increase speed movement!" onclick="increaseSpeed()">
+</form>
+</body>
+</html>
