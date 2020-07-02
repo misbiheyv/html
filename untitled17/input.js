@@ -3,7 +3,7 @@
     var pressedKeys = {};
 
     function setKey(event, status) {
-        var code = event.keyCode;
+        var code = event.keyCode; //возвращает код нажатой в данной момент кнопки
         var key;
 
         switch(code) {
@@ -24,7 +24,11 @@
 
         pressedKeys[key] = status;
     }
-
+    
+    //function(e) == function(event)
+    //регистрируем обработчик событий для данного документа
+    //keydown - клавиша нажата, keyup - клавиша отпущена
+    
     document.addEventListener('keydown', function(e) {
         setKey(e, true);
     });
