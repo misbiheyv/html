@@ -18,7 +18,7 @@
             case 40:
                 key = 'DOWN'; break;
             default:
-                // Convert ASCII codes to letters
+                // ASCII -> string
                 key = String.fromCharCode(code);
         }
 
@@ -28,6 +28,7 @@
     //function(e) == function(event)
     //регистрируем обработчик событий для данного документа
     //keydown - клавиша нажата, keyup - клавиша отпущена
+    //blur - пользователь убрал фокус от данного окна
     
     document.addEventListener('keydown', function(e) {
         setKey(e, true);
@@ -40,7 +41,9 @@
     window.addEventListener('blur', function() {
         pressedKeys = {};
     });
-
+    
+    //функция проверки нажатия - если клавиша нажата, возвращается массив нажатых клавиш 
+    //touppercase - abc->ABC
     window.input = {
         isDown: function(key) {
             return pressedKeys[key.toUpperCase()];
